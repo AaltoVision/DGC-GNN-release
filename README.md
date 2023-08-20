@@ -1,4 +1,4 @@
-# DGC-GNN: Descriptor-free Geometric-Color Graph Neural Network for 2D-3D Matching
+# [DGC-GNN: Descriptor-free Geometric-Color Graph Neural Network for 2D-3D Matching](https://arxiv.org/abs/2306.12547)
 
 Authors: [Shuzhe Wang](https://ffrivera0.github.io), [Juho Kannala](https://users.aalto.fi/~kannalj1/), [Daniel Barath](https://scholar.google.com/citations?hl=da&user=U9-D8DYAAAAJ&view_op=list_works&sortby=pubdate)
 
