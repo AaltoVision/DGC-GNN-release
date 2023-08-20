@@ -20,7 +20,8 @@ Now install DGC-GNN
 ```
 pip install . --find-links https://data.pyg.org/whl/torch-1.8.0+cu11.1.html
 ```
-
+## Data Preparation
+Coming soon
 ## Evaluation
 
 #### Pretained model
