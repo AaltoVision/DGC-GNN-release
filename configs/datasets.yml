@@ -1,0 +1,76 @@
+megadepth:
+    data_dir: "MegaDepth_undistort"
+    data_processed_dir: "MegaDepth_undistort/data_processed/v2"
+    data_file: "megadepth_2d3d_q500ov0.35-1covis3-10.npy"
+    splits:
+        train: ['0000', '0001', '0002', '0003', '0004', '0005', '0007', '0012', '0013', '0015', '0016', '0017', '0020', '0021', '0023', '0024', '0025', '0026', '0027', '0033', '0036', '0039', '0041', '0042', '0043', '0044', '0047', '0048', '0049', '0056', '0058', '0060', '0062', '0063', '0067', '0071', '0076', '0083', '0087', '0094', '0095', '0098', '0099', '0100', '0102', '0103', '0104', '0105', '0107', '0122', '0130', '0143', '0147', '0168', '0175', '0176', '0178', '0183', '0186', '0189', '0197', '0200', '0204', '0212', '0217', '0235', '0257', '0258', '0269', '0271', '0277', '0285', '0303', '0307', '0331', '0341', '0366', '0377', '0380', '0387', '0389', '0402', '0430', '0478', '0482', '0505', '0559', '0733', '0768', '0860', '1001', '1017', '1589', '3346', '4541', '5015', '5016', '5017', '5018']
+        test: ['0034']
+        val: ['0019', '0022', '0046', '0050', '0078', '0086', '0101', '0115', '0117', '0160', '0162', '0185', '0286', '0406', '0493', '5014']
+        test: ['0034', '0037', '0061', '0064', '0065', '0070', '0090', '0121', '0129', '0137', '0141', '0149', '0151', '0156', '0177', '0181', '0190', '0205', '0209', '0214', '0223', '0224', '0231', '0237', '0238', '0240', '0243', '0252', '0265', '0275', '0281', '0290', '0294', '0299', '0306', '0312', '0323', '0326', '0327', '0335', '0348', '0360', '0394', '0407', '0411', '0412', '0443', '0446', '0455', '0472', '0474', '0476', '0496']
+    
+
+7scenes_sift_v2: &7scenes_sift_v2
+    data_dir: "7scenes"
+    data_file: "7scenes_2d3d.npy"
+    splits:
+        test: ['chess', 'fire', 'heads', 'pumpkin', 'redkitchen', 'stairs']
+        chess: ['chess']
+        fire: ['fire']
+        heads: ['heads']
+        office: ['office']
+        pumpkin: ['pumpkin']
+        redkitchen: ['redkitchen']
+        stairs: ['stairs']
+7scenes_sift_v2:
+    <<: *7scenes_sift_v2
+    data_processed_dir: "7scenes/data_processed_v2/densevlad-top10-sift"
+        
+7scenes_superpoint_v2:
+    data_processed_dir: "7scenes/data_processed_v2/densevlad-top10-superpoint"
+    data_dir: "7scenes"
+    data_file: "7scenes_2d3d.npy"
+    splits:
+        test: ['chess', 'fire', 'heads', 'office', 'pumpkin', 'redkitchen', 'stairs']
+        chess: ['chess']
+        fire: ['fire']
+        heads: ['heads']
+        office: ['office']
+        pumpkin: ['pumpkin']
+        redkitchen: ['redkitchen']
+        stairs: ['stairs']
+    
+    
+# Cambridge Official Splitted Version     
+cambridge:
+    data_dir: "cambridge"
+    data_processed_dir: "cambridge/data_processed/query-netvlad10"
+    data_file: "cambridge_2d3d.npy"
+    splits:
+        test: ["GreatCourt", "KingsCollege", "OldHospital", "ShopFacade", "StMarysChurch"]
+        great: ["GreatCourt"]
+        kings: ["KingsCollege"]
+        old: ["OldHospital"]
+        shop: ["ShopFacade"]
+        stmarys: ["StMarysChurch"]
+
+cambridge_sift:
+    data_dir: "cambridge"
+    data_processed_dir: "cambridge/data_processed/query-netvlad10-sift"
+    data_file: "cambridge_2d3d.npy"
+    splits:
+        test: ["GreatCourt", "KingsCollege", "OldHospital", "ShopFacade", "StMarysChurch"]
+        great: ["GreatCourt"]
+        kings: ["KingsCollege"]
+        old: ["OldHospital"]
+        shop: ["ShopFacade"]
+        stmarys: ["StMarysChurch"]
+
+scannet:
+    data_dir: "Scannet"
+    data_file: "scannet_2d3d.npy"
+    data_processed_dir: "Scannet/data_processed_v2/overlap-top10-sift-semantic"
+    splits:
+        train: ['scene0038_02', 'scene0209_01', 'scene0619_00', 'scene0085_00', 'scene0468_00', 'scene0618_00', 'scene0024_00', 'scene0196_00', 'scene0471_01', 'scene0057_00', 'scene0241_01', 'scene0022_00', 'scene0147_00', 'scene0161_00', 'scene0263_00', 'scene0424_02', 'scene0545_02', 'scene0149_00', 'scene0050_01', 'scene0097_00', 'scene0581_01', 'scene0089_01', 'scene0126_02', 'scene0456_01', 'scene0673_00', 'scene0393_00', 'scene0702_01', 'scene0579_01', 'scene0062_01', 'scene0652_00', 'scene0088_02', 'scene0614_00', 'scene0450_00', 'scene0289_00', 'scene0524_01', 'scene0207_01', 'scene0559_00', 'scene0459_00', 'scene0337_01',
+                'scene0197_00', 'scene0282_00', 'scene0237_00', 'scene0110_00', 'scene0659_01', 'scene0322_00', 'scene0140_00', 'scene0529_00', 'scene0575_00', 'scene0251_00', 'scene0673_04', 'scene0146_00', 'scene0255_01', 'scene0304_00', 'scene0024_01', 'scene0677_01', 'scene0241_02', 'scene0595_00', 'scene0681_00', 'scene0688_00', 'scene0145_00', 'scene0194_00', 'scene0372_00', 'scene0370_00', 'scene0523_01', 'scene0074_02', 'scene0550_00', 'scene0428_01', 'scene0254_01', 'scene0398_00', 'scene0250_00', 'scene0039_01', 'scene0539_01', 'scene0103_00', 'scene0080_02', 'scene0113_01', 'scene0296_01', 'scene0115_02', 'scene0700_00', 'scene0277_01', 'scene0280_02', 'scene0294_01', 'scene0302_00', 'scene0673_02', 'scene0092_04', 'scene0005_00', 'scene0685_02', 'scene0635_00', 'scene0268_01', 'scene0101_03', 'scene0255_02', 'scene0469_01', 'scene0548_01', 'scene0102_01', 'scene0029_02', 'scene0180_00', 'scene0101_00', 'scene0172_01', 'scene0365_01', 'scene0575_02', 'scene0420_01', 'scene0366_00', 'scene0084_01', 'scene0477_00', 'scene0192_01', 'scene0173_00']
+        val: ['scene0629_01', 'scene0663_00', 'scene0026_00', 'scene0607_01', 'scene0582_02']
+        test: ['scene0666_02', 'scene0588_02', 'scene0558_00', 'scene0253_00', 'scene0260_00', 'scene0186_01', 'scene0572_00', 'scene0188_00', 'scene0079_00', 'scene0038_00', 'scene0273_01', 'scene0301_00', 'scene0348_02', 'scene0291_00', 'scene0003_01', 'scene0452_01', 'scene0475_00', 'scene0132_02', 'scene0416_00', 'scene0388_01', 'scene0529_01', 'scene0003_02', 'scene0263_01', 'scene0053_00', 'scene0362_01', 'scene0515_00', 'scene0525_00', 'scene0669_01', 'scene0192_02', 'scene0182_01']
