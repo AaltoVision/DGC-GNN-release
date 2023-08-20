@@ -34,10 +34,11 @@ sh eval.sh
 Coming soon
 
 ## Acknowledgements
-We appreciate the previous open-source repository [GoMatch](https://github.com/dvl-tum/gomatch)
+We appreciate the previous open-source repository [GoMatch](https://github.com/dvl-tum/gomatch).
 
 ## License
 Copyright (c) 2023 AaltoVision.
+
 This code is released under the MIT License.
 
 ## Citation
