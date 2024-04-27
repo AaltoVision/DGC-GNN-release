@@ -12,13 +12,13 @@ For keypoints from the 2D image and 3D points from the point cloud, the proposed
 
 <img src="DGC-GNN.png" width="800"/>
 
-##### Updated results On Cambridge
+##### Updated results On Cambridge 
 
 We provide additional results on  Cambridge with outlier rejection threshold = 0.7 when k=10  ,  we observe better performance with this setting. 
 
-| Median Error (cm / deg)   | King's College | Old Hospital  | Shop Facade  | St Mary's Church |
-| ------------------------- | :------------: | :-----------: | :----------: | :--------------: |
-| rejection threshold = 0.7 | **17 / 0.41**  | **36 / 0.92** | **9 / 0.96** |  **55 / 1.52**   |
+| Median Error (cm / deg)   | King's College | Old Hospital  | Shop Facade  | St Mary's Church | Average       |
+| ------------------------- | :------------: | :-----------: | :----------: | :--------------: | ------------- |
+| rejection threshold = 0.7 | **17 / 0.41**  | **36 / 0.92** | **9 / 0.96** |  **55 / 1.52**   | **29 / 0.95** |
 
 
 
