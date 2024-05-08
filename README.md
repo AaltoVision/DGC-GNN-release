@@ -1,4 +1,4 @@
-# [CVPR 2024] [DGC-GNN: Descriptor-free Geometric-Color Graph Neural Network for 2D-3D Matching](https://arxiv.org/abs/2306.12547)
+# [CVPR 2024] [DGC-GNN: Leveraging Geometry and Color Cues for Visual Descriptor-Free 2D-3D Matching](https://arxiv.org/abs/2306.12547)
 
 Authors: [Shuzhe Wang](https://ffrivera0.github.io), [Juho Kannala](https://users.aalto.fi/~kannalj1/), [Daniel Barath](https://scholar.google.com/citations?hl=da&user=U9-D8DYAAAAJ&view_op=list_works&sortby=pubdate)
 
@@ -71,7 +71,7 @@ This code is released under the MIT License.
 Please consider citing our papers if you find this code useful for your research:
 ```
 @article{wang2023dgc,
-  title={DGC-GNN: Descriptor-free Geometric-Color Graph Neural Network for 2D-3D Matching},
+  title={DGC-GNN: Leveraging Geometry and Color Cues for Visual Descriptor-Free 2D-3D Matching},
   author={Wang, Shuzhe and Kannala, Juho and Barath, Daniel},
   journal={arXiv preprint arXiv:2306.12547},
   year={2023}
