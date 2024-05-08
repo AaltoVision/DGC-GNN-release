@@ -44,7 +44,7 @@ Now install DGC-GNN
 pip install . --find-links https://data.pyg.org/whl/torch-1.8.0+cu11.1.html
 ```
 ## Data Preparation
-We provide the processed MegaDepth training data [here](https://drive.google.com/drive/folders/1ae8CHU42wTJleRrlG9GBY4V-PIdqsM0O?usp=sharing). Considering download and put it to ```/data```
+We provide the processed MegaDepth training data [here](https://drive.google.com/drive/folders/1ae8CHU42wTJleRrlG9GBY4V-PIdqsM0O?usp=sharing). Considering download and put it to ```/data/MegaDepth_undistort```
 ## Evaluation
 
 #### Pretained model
